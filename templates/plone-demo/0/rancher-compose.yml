@@ -1,0 +1,33 @@
+version: "2"
+catalog:
+  name: "Plone (Demo)"
+  version: "0.1"
+  description: "Plone Demo"
+
+services:
+  plone:
+    scale: 2
+    health_check:
+      port: 8080
+      interval: 30000
+      unhealthy_threshold: 5
+      healthy_threshold: 1
+      response_timeout: 3000
+
+  zeo:
+    scale: 1
+    health_check:
+      port: 8080
+      interval: 30000
+      unhealthy_threshold: 5
+      healthy_threshold: 1
+      response_timeout: 3000
+
+  lb:
+    scale: 1
+    health_check:
+      port: 4242
+      interval: 30000
+      unhealthy_threshold: 5
+      healthy_threshold: 1
+      response_timeout: 3000

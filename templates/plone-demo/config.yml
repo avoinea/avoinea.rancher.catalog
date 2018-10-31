@@ -1,0 +1,9 @@
+name: "Plone (Demo)"
+description: "Plone 5 demo website"
+version: "0.1"
+category: "Applications"
+maintainer: "Alin Voinea"
+license: "GPLv3"
+projectURL: https://plone.demo.avoinea.com
+labels:
+  io.rancher.certified: Alin Voinea
