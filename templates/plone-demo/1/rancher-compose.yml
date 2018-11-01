@@ -1,7 +1,7 @@
 version: "2"
 catalog:
   name: "Plone (Demo)"
-  version: "0.1"
+  version: ".2"
   description: "Plone Demo"
 
 services:

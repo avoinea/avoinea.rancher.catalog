@@ -1,6 +1,6 @@
 name: "Plone (Demo)"
 description: "Plone 5 demo website"
-version: "0.1"
+version: ".2"
 category: "Applications"
 maintainer: "Alin Voinea"
 license: "GPLv3"
