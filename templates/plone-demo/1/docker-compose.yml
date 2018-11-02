@@ -3,6 +3,7 @@ services:
   zeo:
     image: plone:5.1.4
     labels:
+      io.rancher.scheduler.affinity:host_label: db=yes
       io.rancher.scheduler.affinity:container_label_soft_ne: io.rancher.stack_service.name=$${stack_name}/$${service_name}
     volumes:
     - zeo:/data
